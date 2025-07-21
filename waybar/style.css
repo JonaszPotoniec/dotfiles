@@ -324,3 +324,15 @@ label:focus {
 #keyboard-state > label.locked {
     background: @crust;
 }
+
+#custom-pope.pope-active {
+    background-image: url("/home/jonasz/.config/waybar/assets/pope.png");
+    background-size: 34px 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 34px;
+}
+
+#custom-pope.pope-inactive {
+    background: transparent;
+}

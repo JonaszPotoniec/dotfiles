@@ -22,7 +22,8 @@
         "temperature",
         //"idle_inhibitor",
         //"mpd"
-        "custom/spotify"
+        "custom/spotify",
+        "custom/pope"
     ],
     "modules-center": [
         //"hyprland/window"
@@ -187,14 +188,22 @@
         "min-length": 3
     },
 
-"custom/spotify": {
-    "exec": "~/.config/waybar/mediaplayer.py --player spotify",
-    "format": "  {}",
-    "return-type": "json",
-    "on-click": "playerctl play-pause",
-    "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl previous"
-},
+    "custom/spotify": {
+        "exec": "~/.config/waybar/mediaplayer.py --player spotify",
+        "format": "  {}",
+        "return-type": "json",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
+    },
+
+    "custom/pope": {
+        "type": "custom/script",
+        "interval": 30,
+        "exec": "~/.config/waybar/modules/pope.sh",
+        "format": "{}",
+        "return-type": "json"
+    },
 
     "custom/media": {
         "format": "{0} {1}",
