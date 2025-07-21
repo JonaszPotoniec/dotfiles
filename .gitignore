@@ -1,0 +1,19 @@
+# Ignore everything by default
+*
+
+# Whitelist
+!/.gitignore
+!/waybar/
+!/waybar/**
+!/hypr/
+!/hypr/**
+!/waypaper/
+!/waypaper/**
+!/nvim/
+!/nvim/**
+!/rofi/
+!/rofi/**
+!/btop/
+!/btop/**
+!/alacritty/
+!/alacritty/**
