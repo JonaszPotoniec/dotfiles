@@ -1,0 +1,33 @@
+[include]
+	path = $XDG_CONFIG_HOME/delta/themes/catppuccin.gitconfig
+
+[user]
+	email = jonasz.potoniec@gmail.com
+	name = Jonasz Potoniec
+[init]
+	defaultBranch = main
+
+[push]
+	autoSetupRemote = true
+
+[core]
+	pager = delta
+	editor = nvim
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true    # use n and N to move between diff sections
+	light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+	features = catppuccin-mocha
+
+[merge]
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = default
+
+[alias]	
+	combine = !git fetch origin ${1} && git merge origin/${1}
+	rebasei = !git fetch origin ${1} && git rebase origin/${1} --autostash -i 
