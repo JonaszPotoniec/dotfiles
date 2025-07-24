@@ -17,6 +17,9 @@
 !/btop/**
 !/alacritty/
 !/alacritty/**
+!/tmux/
+!/tmux/tmux.conf
+!/tmux/tmux.conf.local
 
 # code
 !/Code/
