@@ -17,3 +17,9 @@
 !/btop/**
 !/alacritty/
 !/alacritty/**
+
+# code
+!/Code/
+!/Code/User/
+!/Code/User/settings.json
+!/Code/User/mcp.json

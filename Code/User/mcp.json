@@ -1,0 +1,41 @@
+{
+  "servers": {
+    "tavily": {
+      "command": "npx",
+      "args": ["-y", "tavily-mcp@0.2.1"],
+      "env": {
+        "TAVILY_API_KEY": "${input:tavily_api_key}"
+      }
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
+      "env": {
+        "DEFAULT_MINIMUM_TOKENS": "6000"
+      }
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "allpepper-memory-bank": {
+      "command": "npx",
+      "args": ["-y", "@allpepper/memory-bank-mcp"],
+      "env": {
+        "MEMORY_BANK_ROOT": "~/.memory-bank"
+      }
+    }
+    // ## Unstable ##
+    // "sequential-thinking": {
+    //   "command": "npx",
+    //   "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    // },
+  },
+  "inputs": [
+    {
+      "id": "tavily_api_key",
+      "type": "promptString",
+      "description": "Enter your Tavily API key"
+    }
+  ]
+}
