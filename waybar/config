@@ -39,6 +39,7 @@
         // "battery",
         //"pulseaudio",
         "wireplumber",
+        "custom/kooha",
         "custom/screenshot_t",
 	"network",
         "bluetooth",
@@ -68,8 +69,16 @@
         "on-click": "wofi --show run",
         "on-click-middle": "pkill -9 wofi"
     },
-    "custom/screenshot_t":{
-        "format":"",
+
+    "custom/kooha": {
+        "format": "", // Icon (Font Awesome video camera icon)
+        "tooltip": "Start Screen Recording",
+        "on-click": "~/.config/waybar/modules/kooha.sh",
+        "return-type": "json"
+    },
+
+    "custom/screenshot_t": {
+        "format":"", // Icon (Font Awesome camera icon)
         "on-click": "~/.config/hypr/scripts/screenshot_full",
         "on-click-right":"~/.config/hypr/scripts/screenshot_area"
     },

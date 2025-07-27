@@ -110,7 +110,8 @@ window#waybar.hidden {
     padding: 2px 12px;  /* Adjusted padding */
 }
 
-#custom-screenshot_t {
+#custom-screenshot_t,
+#custom-kooha {
     background-color: @base;
     border-radius: 14px;
     padding: 2px 12px;
